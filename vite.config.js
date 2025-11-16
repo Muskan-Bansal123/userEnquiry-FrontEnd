@@ -5,6 +5,10 @@ import tailwindcss from "@tailwindcss/vite"; // ✅ correct import
 import flowbiteReact from "flowbite-react/plugin/vite";
 
 export default defineConfig({
-  plugins: [react(), // ✅ use as a plugin here
-  tailwindcss(), flowbiteReact()],
+  plugins: [
+    react(), // ✅ use as a plugin here
+    tailwindcss(),
+    flowbiteReact(),
+  ],
+  base: "/",
 });
